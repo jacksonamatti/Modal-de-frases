@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amatic SC", cursive;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttonAbrir {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(21, 41, 219);
+  cursor: pointer;
+  border: none;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+#buttonAbrir:focus {
+  border: none;
+}
+
+#buttonAbrir:hover {
+  background-color: aliceblue;
+  color: blue;
+}
+
+.modal {
+  width: 80%;
+  min-height: 50vh;
+  background-color: aliceblue;
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 20px 19px 7px 3px rgba(237, 225, 225, 0.75);
+  -webkit-box-shadow: 20px 19px 7px 3px rgba(237, 225, 225, 0.75);
+  -moz-box-shadow: 20px 19px 7px 3px rgba(237, 225, 225, 0.75);
+}
+.modal p {
+  height: 50vh;
+  float: none;
+  word-wrap: break-word;
+  margin-top: 50px;
+  font-size: 40px;
+  padding: 25px 30px;
+}
+
+.fechar {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: blue;
+  color: aliceblue;
+}
+
+.fechar:hover {
+  background-color: aliceblue;
+  color: blue;
+}
